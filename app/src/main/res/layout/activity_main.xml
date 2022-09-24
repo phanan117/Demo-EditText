@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        app:hintEnabled="true"
+        android:id="@+id/tvUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="Username" />
+
+    <EditText
+        android:maxLength="10"
+        android:id="@+id/etUsername"
+        android:inputType="text"
+        android:hint="Input Username"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="2"
+        ></EditText>
+
+    <TextView
+
+        app:hintEnabled="true"
+        android:id="@+id/tvPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        android:text="Password" />
+
+    <EditText
+        android:maxLength="10"
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/key3"
+        android:hint="Input password"
+        android:inputType="textPassword"
+        android:lines="1"
+        android:textColorHint="@color/black"></EditText>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+</LinearLayout>
